@@ -32,15 +32,15 @@ hermes profile install https://github.com/zzyxiangnian-star/hermes-bot-crawler -
 安装完成后，可直接启动对话：
 
 ```bash
-hermes -p crawler chat
+hermes -p bot-crawler chat
 # 若使用了 --alias，也可以直接运行：
-crawler chat
+bot-crawler chat
 ```
 
 后续如需拉取本仓库的最新配方更新（不会覆盖你的本地记忆和模型配置）：
 
 ```bash
-hermes profile update crawler
+hermes profile update bot-crawler
 ```
 
 ## 推荐搭配的 Hermes 技能（Skills）
@@ -55,5 +55,5 @@ hermes profile update crawler
 可通过以下命令查看或管理技能：
 
 ```bash
-hermes -p crawler skills list
+hermes -p bot-crawler skills list
 ```
