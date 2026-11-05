@@ -1,0 +1,19 @@
+# hermes-bot-crawler 配置文件
+# 仅声明本 Bot 所需的工具集与 MCP 服务器，不指定模型与任何密钥（沿用宿主默认配置）
+
+platform_toolsets:
+  cli: [web, browser, file, cronjob, todo, skills]
+  telegram: [web, browser, file, cronjob, todo, skills, send_message]
+  discord: [web, browser, file, cronjob, todo, skills, send_message]
+  whatsapp: [web, browser, file, cronjob, todo, skills, send_message]
+  slack: [web, browser, file, cronjob, todo, skills, send_message]
+  signal: [web, browser, file, cronjob, todo, skills, send_message]
+  qqbot: [web, browser, file, cronjob, todo, skills, send_message]
+  yuanbao: [web, browser, file, cronjob, todo, skills, send_message]
+
+mcp_servers:
+  playwright:
+    command: "npx"
+    args: ["-y", "@playwright/mcp@latest", "--headless"]
+    idle_timeout_seconds: 900
+    max_lifetime_seconds: 86400

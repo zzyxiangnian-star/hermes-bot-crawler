@@ -1,0 +1,5 @@
+name: crawler
+version: 0.1.0
+description: "抓取网页内容、整理成表格或 Markdown，并支持定时抓取的网页采集助手"
+author: "zzyxiangnian-star"
+license: "MIT"
